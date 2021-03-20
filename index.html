@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="style.css">
+<script src="calc.js"></script>
+
+<body>
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label class="tab-label" for="tabone">40001</label>
+        <div class="tab">
+            <label class="input_label">Coursework 1:<input type="number" placeholder="Enter mark out of 60" id="40001_1" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 2:<input type="number" placeholder="Enter mark out of 100" id="40001_2" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 3:<input type="number" placeholder="Enter mark out of 60" id="40001_3" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label class="tab-label" for="tabtwo">40002</label>
+        <div class="tab">
+            <label class="input_label">Coursework 1:<input type="number" placeholder="Enter mark out of 20" id="40002_1" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 2:<input type="number" placeholder="Enter mark out of 20" id="40002_2" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 3:<input type="number" placeholder="Enter mark out of 20" id="40002_3" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 4:<input type="number" placeholder="Enter mark out of 20" id="40002_4" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 5:<input type="number" placeholder="Enter mark out of 20" id="40002_5" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 6:<input type="number" placeholder="Enter mark out of 20" id="40002_6" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 7:<input type="number" placeholder="Enter mark out of 20" id="40002_7" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 8:<input type="number" placeholder="Enter mark out of 20" id="40002_8" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label class="tab-label" for="tabthree">40003</label>
+        <div class="tab">
+            <label class="input_label">Coursework:<input type="number" placeholder="Enter mark out of 50" id="40003_1" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabfour">
+        <label class="tab-label" for="tabfour">40004</label>
+        <div class="tab">
+            <label class="input_label">Discrete Test:<input type="number" placeholder="Enter mark out of 30" id="40004_1" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabfive">
+        <label class="tab-label" for="tabfive">40005</label>
+        <div class="tab">
+            <label class="input_label">Coursework 1:<input type="number" placeholder="Enter mark out of 100" id="40005_1" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 2:<input type="number" placeholder="Enter mark out of 70" id="40005_2" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabsix">
+        <label class="tab-label" for="tabsix">40006</label>
+        <div class="tab">
+            <label class="input_label">Coursework:<input type="number" placeholder="Enter mark out of 20" id="40006_1" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabseven">
+        <label class="tab-label" for="tabseven">40007</label>
+        <div class="tab">
+            <label class="input_label">Coursework 1:<input type="number" placeholder="Enter mark out of 100" id="40007_1" onkeyup=setGrades();></label>
+            <label class="input_label">Coursework 2:<input type="number" placeholder="Enter mark out of ??" id="40007_2" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabeight">
+        <label class="tab-label" for="tabeight">40008</label>
+        <div class="tab">
+            <label class="input_label">Coursework:<input type="number" placeholder="Enter mark out of ??" id="40008_1" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabnine">
+        <label class="tab-label" for="tabnine">40009</label>
+        <div class="tab">
+            <label class="input_label">Haskell Interim:<input type="number" placeholder="Enter mark out of 20" id="40009_1" onkeyup=setGrades();></label>
+            <label class="input_label">Haskell Final:<input type="number" placeholder="Enter mark out of 30" id="40009_2" onkeyup=setGrades();></label>
+            <label class="input_label">Ethics Video:<input type="number" placeholder="Enter mark out of 100" id="40009_3" onkeyup=setGrades();></label>
+            <label class="input_label">Ethics Report:<input type="number" placeholder="Enter mark out of 90" id="40009_4" onkeyup=setGrades();></label>
+            <label class="input_label">Java Interim:<input type="number" placeholder="Enter mark out of ??" id="40009_5" onkeyup=setGrades();></label>
+            <label class="input_label">Java Final:<input type="number" placeholder="Enter mark out of ??" id="40009_6" onkeyup=setGrades();></label>
+            <label class="input_label">C Project:<input type="number" placeholder="Enter mark out of ??" id="40009_7" onkeyup=setGrades();></label>
+            <label class="input_label">C Main Test:<input type="number" placeholder="Enter mark out of ??" id="40009_8" onkeyup=setGrades();></label>
+        </div>
+
+        <input type="radio" name="tabs" id="tabten">
+        <label class="tab-label" for="tabten">Result</label>
+        <div class="tab">
+            <p id="tsum"></p>
+            <p id="tweight"></p>
+            <p id="wsum"></p>
+        </div>
+    </div>
+
+</body>
