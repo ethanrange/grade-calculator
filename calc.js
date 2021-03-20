@@ -45,15 +45,15 @@ function setGrades() {
     var tweight = document.getElementById('tweight');
     var wsum = document.getElementById('wsum');
 
-    tsum.innerHTML = "Total sum: " + (totalSum).toFixed(2);
-    tweight.innerHTML = "Total weight: " + (weightSum).toFixed(2);
-    wsum.innerHTML = "Average: " + (totalSum / weightSum).toFixed(4) * 100 + "%";
+    tsum.innerHTML = "Weighted Mark Sum: " + (totalSum).toFixed(2);
+    tweight.innerHTML = "Weight Sum: " + (weightSum).toFixed(2);
+    wsum.innerHTML = weightSum == 0 ? "Average: " : "Average: " + (totalSum / weightSum).toFixed(4) * 100 + "%";
 }
 
 function getMark(id, max, weight) {
     var result = parseInt(document.getElementById(id).value) / max;
 
-    if (!isNaN(result)) {
+    if (!isNaN(result) && max != 0) {
         weightSum += weight;
         totalSum += result * weight;
     }
