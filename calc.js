@@ -30,7 +30,7 @@ function setGrades() {
     getMark('40007_1', 100, 0.15 * 1 / 2);
     getMark('40007_2', 0, 0.15 * 1 / 2); //BLANK
 
-    getMark('40008_1', 0, 0.15 * 1); //BLANK
+    getMark('40008_1', 20, 0.15 * 1);
 
     getMark('40009_1', 20, 15 / 100);
     getMark('40009_2', 30, 75 / 100);
