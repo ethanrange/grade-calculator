@@ -36,7 +36,7 @@ function setGrades() {
     getMark('40009_2', 30, 75 / 100);
     getMark('40009_3', 100, 15 / 100);
     getMark('40009_4', 90, 105 / 100);
-    getMark('40009_5', 0, 24 / 100); //BLANK
+    getMark('40009_5', 100, 24 / 100);
     getMark('40009_6', 0, 36 / 100); //BLANK
     getMark('40009_7', 0, 24 / 100); //BLANK
     getMark('40009_8', 0, 36 / 100); //BLANK
