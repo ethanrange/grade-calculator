@@ -1,19 +1,20 @@
 .tabs {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .tab-label {
-    width: 7%;
+    width: 10%;
+    box-sizing: border-box;
     order: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    margin-right: 0.2rem;
     cursor: pointer;
-    background-color: #71c4e3;
+    background-color: #8B9EB7;
     font-weight: bold;
     transition: background ease 0.3s;
 }
@@ -27,7 +28,7 @@
     padding: 1rem;
     background: #fff;
     padding: 10px 20px;
-    box-shadow: -10px 10px 0px 0px black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .tabs input[type="radio"] {
@@ -36,6 +37,12 @@
 
 .tabs input[type="radio"]:checked+label {
     background: #fff;
+    z-index: 100;
+}
+
+.tabs input[type="radio"]:hover+label {
+    background: #fff;
+    z-index: 99;
 }
 
 .tabs input[type="radio"]:checked+label+.tab {
@@ -43,7 +50,7 @@
 }
 
 body {
-    background: #71c4e3;
+    background: #8B9EB7;
     box-sizing: border-box;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
