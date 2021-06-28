@@ -71,12 +71,12 @@ function setGrades() {
     getMark('40009_8', 50, 4 * (17 / 100)); // Java Final B 17%
 
     getMark('40009_9', 50, 4 * (1 / 100)); // Checkpoint 1%
-    getMark('40009_10', 20, 4 * (12 / 100)); // C Final 12%
-    getMark('40009_11', 5, 4 * (3 / 100)); // C Report / Source 3%
-    getMark('40009_12', 5, 4 * (1 / 100)); // C Extension
-    getMark('40009_13', 5, 4 * (1 / 100)); // C Presentation
+    getMark('40009_10', 100, 4 * (12 / 100)); // C Final 12%
+    getMark('40009_11', 20, 4 * (3 / 100)); // C Report / Source 3%
+    getMark('40009_12', 20, 4 * (1 / 100)); // C Extension
+    getMark('40009_13', 20, 4 * (1 / 100)); // C Presentation
     getMark('40009_14', 5, 4 * (1 / 100)); // C Feedback 1
-    getMark('40009_15', 30, 4 * (1 / 100)); // C Feedback 2
+    getMark('40009_15', 5, 4 * (1 / 100)); // C Feedback 2
 
     var tsum = document.getElementById('tsum');
     var tweight = document.getElementById('tweight');
